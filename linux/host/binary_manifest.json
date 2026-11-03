@@ -1,0 +1,10 @@
+{
+  "Date": "2026-11-02",
+  "Platform": "Ubuntu24.04 x86-64",
+  "SourceSHA256": "7b4486c110aec7f30fbecf7060415732f892c0efee3a4f263754ba3fcd3504e8",
+  "BinarySHA256": "2af7a01f64f23775e9ce6d0af9ae140164f9a199c109e45ce2a2f5c0f71c875a",
+  "Compile": "PASS",
+  "HelpRun": "PASS",
+  "DynamicDependencies": "Resolved on Linux host",
+  "NewFPGAInferenceRun": false
+}

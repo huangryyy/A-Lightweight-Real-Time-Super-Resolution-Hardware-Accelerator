@@ -1,0 +1,16 @@
+{
+  "scope": "one paired 3DIC LR/GT sample, both results from actual FPGA",
+  "lr_sha256": "8d964c335d3fde271393aed9697c11248c8f9d931132172c5ae68bd5fde0daea",
+  "gt_sha256": "f52dddd567b1927ae37d9963e2d0d2245232765f9d8e389b8cfef8c9a6996ccc",
+  "Y_PSNR_no_crop": {
+    "bicubic": 26.79633035109638,
+    "old7_hardware": 27.303381870732217,
+    "new8_hardware": 27.894332621466077
+  },
+  "Y_PSNR_crop4": {
+    "bicubic": 26.78793379116144,
+    "old7_hardware": 27.309768328790156,
+    "new8_hardware": 27.89553968304512
+  },
+  "gain_db_no_crop": 0.5909507507338603
+}
