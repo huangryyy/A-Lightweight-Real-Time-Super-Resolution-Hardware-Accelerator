@@ -1,0 +1,174 @@
+[
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core\\Acc_1.v",
+    "Hash": "465FEDF97F04733FB2EF992E3A63024E668C22F034E57AECA7EF86DC6B5E7448"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core\\acc_1x16.v",
+    "Hash": "A27F01A2E5654BCF4815AA87E502F7A72F1AEDA33D5F8F542030F7CCA98B8355"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core\\adder.v",
+    "Hash": "01646F5EA7A1EC051E5ABE4855613D6FFE6989E02B86874C6F707DFAC0ADC76F"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core\\Control_sram_addr.v",
+    "Hash": "8309E3CE18FF305CB06CD7287F555CEEE9C1D445C345C9E6E023ED53D1CB0F74"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core\\count.v",
+    "Hash": "24C84F9B469586D63E9B148B22253D1B279AF5061EA64C367628B31DB1394422"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core\\ddr_rd_core_conv_bias.v",
+    "Hash": "B334152ABB35E7A736CFFF7AF04F3D37733246A653393AAEA067D80B7360BBAB"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core\\ddr_rd_core_conv_inp.v",
+    "Hash": "CF5B958623B2BA4F05420CFC5F445E6966690C92E483D4D34E68D898A00CDBBA"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core\\ddr_rd_core_conv_weight.v",
+    "Hash": "1A68A5CDAE91264885A024DBBA45D3128F9EF18B1F7ADC73EA95233007FD83A6"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core\\ddr_rd_wrapper1.v",
+    "Hash": "3F7A677D69DDB3DED4DFF1502EC2AFD743A252121F8D99ED4EFAD0FA348F0DA9"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core\\ddr_rd_wrapper2.v",
+    "Hash": "06C18A4A57F1C58E6855C6114AD940DEFA0BD1027833BC9A2C80069D978E927B"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core\\ddr_rd_wrapper3.v",
+    "Hash": "4FAD1D1C6117BB37CD4CFDBEFB3E9F2B6292EF4FDB3D6CD59662DA21EAF8776D"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core\\ddr_wr_wrapper1.v",
+    "Hash": "67CE5F4B5F90376608825D9FDF2FA8DD5DEB480D595B34AA034594CF32BDAE59"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core\\ddr_wt_core_conv.v",
+    "Hash": "607CD068CA9537BEF280F500780B7F5966D5374EA3D8CA80876487AFF5A1566F"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core\\Eg_mul.v",
+    "Hash": "DD36C9B22D58DE7F018FB5160AD93B6BEE0FD5B25302A5DCCA6CD95326BB3E19"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core\\FSM_state.v",
+    "Hash": "9663D9338AAB3530BE50E993FDCF5852B2CDDB270813E30BD2C779D155595003"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core\\global_residual_store.v",
+    "Hash": "C1E0D2EF6F4A677EDB367051E822EF47EE94CF54E16E7C66F7EABA3958646B8B"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core\\Mac.v",
+    "Hash": "6AFBA0837C14EC731246AEE391C05738F7D3DA1D52926624DC1C564847F0A020"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core\\PG_sram.v",
+    "Hash": "00B2E9B1A04D1AAE1363F6889F87AFED5FD561E5056DF4CEFB116F886E90DECC"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core\\Processing_group.v",
+    "Hash": "DAC375EC28905E045417960E40006AC74B1979FC972ADE5B7669E95E1A357678"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core\\rd_finish_signal_gen.v",
+    "Hash": "FA70BD0B19B7B08773F8CB09F6BDA475218553ACDE678678A6C2AD3BE1EE9688"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core\\ReLU.v",
+    "Hash": "52E3AFDF8D2A6C6949307162332D80886DB43CD59D06FAD6C9FABE4E5481E201"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core\\residual_add_saturate.v",
+    "Hash": "5C86DC8383B8FDE6AD54A00D0C411537CD360840215BBFA21F4ABA4D890621DC"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core\\top_controller.v",
+    "Hash": "D61C0FBFB17ECFFC8F4305FDD23F34BC301828458FCF28C0158E5769017AB097"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core\\Top.v",
+    "Hash": "09E6B897E189E022F980DAD85EA78CB26BA0E6DEC54445F6B64D439468E3AA16"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core_test\\Core_test.srcs\\constrs_1\\imports\\Core_test\\Clock.xdc",
+    "Hash": "62FA8F442D9F9993D7023ABAF979D20481C48AC6B5AA55D9B6CE1B066F75F405"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core_test\\Core_test.srcs\\constrs_1\\imports\\Core_test\\ddr4.xdc",
+    "Hash": "EA5917714878E92DA737B56357CDBBADCB401EB11E389555419CB7C951791AFE"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core_test\\Core_test.srcs\\constrs_1\\imports\\Core_test\\pcie.xdc",
+    "Hash": "F750C5BFF29C9618215865046807D14E977B1D116F9EE20DAFFBFEB261358974"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core_test\\Core_test.srcs\\sources_1\\ip\\axi_interconnect_0_1\\axi_interconnect_0.xci",
+    "Hash": "1D6F078CA18F1C307500DC131E8F3BB93FCCA7A633D78F6448FE1E19083E0073"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core_test\\Core_test.srcs\\sources_1\\ip\\blk_mem_gen_input\\blk_mem_gen_input.xci",
+    "Hash": "4C773BD625017628ACB24088098F6E9F4D39FA1BF96DE6D1BA4E1B99C4F4B8CF"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core_test\\Core_test.srcs\\sources_1\\ip\\blk_mem_gen_output\\blk_mem_gen_output.xci",
+    "Hash": "74C9103043B8B602DDA39D5561575B78BD3C49BBF3DD2C77735C5C3DF346624E"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core_test\\Core_test.srcs\\sources_1\\ip\\blk_mem_gen_weight\\blk_mem_gen_weight.xci",
+    "Hash": "28B52C5EF621A048AE7FDF6584E87456C89BB60ABCC46405B522ECBCDD3C91D2"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core_test\\Core_test.srcs\\sources_1\\ip\\clk_wiz_0\\clk_wiz_0.xci",
+    "Hash": "3B6062935467D2BF13860CBE80B132359B21A309D35ACD3B49B98B720BEEF960"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core_test\\Core_test.srcs\\sources_1\\ip\\clk_wiz_1\\clk_wiz_1.xci",
+    "Hash": "BD12CAE6226C6B4F0AD08F3C981C91F489BF2A4C882D7C1218341AA503ECAF67"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core_test\\Core_test.srcs\\sources_1\\ip\\ddr4_controller\\ddr4_controller.xci",
+    "Hash": "0C3D710B6F9650908129FB9EDD6C2F52B787B17AEF609F91D523EF5710ADE6B8"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core_test\\Core_test.srcs\\sources_1\\ip\\fifo_512din_512dout_512d\\fifo_512din_512dout_512d.xci",
+    "Hash": "78D3028A57E91170F2330A54392F0F11F850BF88CD5E5FB88C5066ACE1539795"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core_test\\Core_test.srcs\\sources_1\\ip\\fifo_top_controller\\fifo_top_controller.xci",
+    "Hash": "8FBF5E2011D67454B5FF892DC9AA3DBA8404B22A07E09345EF75D5150947D2D5"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core_test\\Core_test.srcs\\sources_1\\ip\\Hsigned_mult_Isigned\\Hsigned_mult_Isigned.xci",
+    "Hash": "D710D5855920469A557CC73000E35FCDCB161AA766A2ADA8D1B2BB08E156B945"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core_test\\Core_test.srcs\\sources_1\\ip\\mult_quantization_scale\\mult_quantization_scale.xci",
+    "Hash": "2F14353C2ADC64650882AE5E90690F6CE493422F5375CCCD39C5BF0833231629"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core_test\\Core_test.srcs\\sources_1\\ip\\proc_sys_reset_0\\proc_sys_reset_0.xci",
+    "Hash": "0A8B1242BFB552705BBDD2FFF802CF7236CB607F31F0F657D80FAC48B8F3332D"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core_test\\Core_test.srcs\\sources_1\\ip\\proc_sys_reset_ddr\\proc_sys_reset_ddr.xci",
+    "Hash": "F5CDC4DF4CB245C34AC221095247ADABE90CBF99D43D00D16318DADA35C73444"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\Core_test\\Core_test.srcs\\sources_1\\ip\\xdma_0\\xdma_0.xci",
+    "Hash": "7857AF66AD265071326B785695FC574B9D6F6BF0574A5941BBFAC5AA5A5778D3"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\vivado_scripts\\run_ppa.tcl",
+    "Hash": "36DFBDE16B7CE2CEC060B32783A77E717D6DB4D9611D0FDE4F06AF356143E15A"
+  },
+  {
+    "Path": "D:\\Vivado\\FPGA_嵌赛\\vivado_scripts\\rebuild.tcl",
+    "Hash": "279FAAFD0CDEA10D2F1631DC37B32B4A32AE2C9BEC9612520B6BA8381FF99286"
+  }
+]

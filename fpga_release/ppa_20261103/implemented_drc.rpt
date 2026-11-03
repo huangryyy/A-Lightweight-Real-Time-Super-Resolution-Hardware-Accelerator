@@ -1,0 +1,528 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Tue Nov  3 11:02:37 2026
+| Host         : WIN-4UCM7KQUVA0 running 64-bit major release  (build 9200)
+| Command      : report_drc -file P:/build/ppa_ascii_20261103_101705/implemented_drc.rpt
+| Design       : Top
+| Device       : xczu19eg-ffvc1760-2-i
+| Speed File   : -2
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: impl_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 81
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| DPIP-2      | Warning  | Input pipelining                                            | 10         |
+| DPOP-3      | Warning  | PREG Output pipelining                                      | 10         |
+| DPOP-4      | Warning  | MREG Output pipelining                                      | 5          |
+| PDCN-1569   | Warning  | LUT equation term check                                     | 13         |
+| PDRC-153    | Warning  | Gated clock check                                           | 4          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 4          |
+| REQP-1857   | Warning  | RAMB18E2_writefirst_collision_advisory                      | 5          |
+| REQP-1858   | Warning  | RAMB36E2_writefirst_collision_advisory                      | 29         |
+| RTSTAT-10   | Warning  | No routable loads                                           | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-2#1 Warning
+Input pipelining  
+DSP ints_PG_sram/Control_sram_addr_insl/inp_raddr0 input ints_PG_sram/Control_sram_addr_insl/inp_raddr0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#2 Warning
+Input pipelining  
+DSP ints_PG_sram/Control_sram_addr_insl/inp_raddr0 input ints_PG_sram/Control_sram_addr_insl/inp_raddr0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#3 Warning
+Input pipelining  
+DSP ints_PG_sram/Control_sram_addr_insl/inp_raddr0 input ints_PG_sram/Control_sram_addr_insl/inp_raddr0/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#4 Warning
+Input pipelining  
+DSP ints_PG_sram/Control_sram_addr_insl/inp_raddr0__0 input ints_PG_sram/Control_sram_addr_insl/inp_raddr0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#5 Warning
+Input pipelining  
+DSP ints_PG_sram/Control_sram_addr_insl/inp_raddr0__0 input ints_PG_sram/Control_sram_addr_insl/inp_raddr0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#6 Warning
+Input pipelining  
+DSP ints_PG_sram/Control_sram_addr_insl/weight_raddr0 input ints_PG_sram/Control_sram_addr_insl/weight_raddr0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#7 Warning
+Input pipelining  
+DSP ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/cnt_hw_input_addr input ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/cnt_hw_input_addr/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#8 Warning
+Input pipelining  
+DSP ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/cnt_hw_input_addr input ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/cnt_hw_input_addr/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#9 Warning
+Input pipelining  
+DSP ints_PG_sram/Processing_group_insl/p_0_out1 input ints_PG_sram/Processing_group_insl/p_0_out1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#10 Warning
+Input pipelining  
+DSP ints_PG_sram/Processing_group_insl/p_0_out1 input ints_PG_sram/Processing_group_insl/p_0_out1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-3#1 Warning
+PREG Output pipelining  
+DSP ints_PG_sram/Control_sram_addr_insl/inp_raddr0 output ints_PG_sram/Control_sram_addr_insl/inp_raddr0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#2 Warning
+PREG Output pipelining  
+DSP ints_PG_sram/Control_sram_addr_insl/inp_raddr0__0 output ints_PG_sram/Control_sram_addr_insl/inp_raddr0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#3 Warning
+PREG Output pipelining  
+DSP ints_PG_sram/Control_sram_addr_insl/weight_raddr0 output ints_PG_sram/Control_sram_addr_insl/weight_raddr0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#4 Warning
+PREG Output pipelining  
+DSP ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/cnt_hw_input_addr output ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/cnt_hw_input_addr/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#5 Warning
+PREG Output pipelining  
+DSP ints_PG_sram/Processing_group_insl/p_0_out1 output ints_PG_sram/Processing_group_insl/p_0_out1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#6 Warning
+PREG Output pipelining  
+DSP ints_PG_sram/Processing_group_insl/parallel_lanes[0].Mac_8x8_ins/gen_eg[14].Eg_mul_8_insi/multiplier[15].Hsigned_mult_Isigned_inst/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg output ints_PG_sram/Processing_group_insl/parallel_lanes[0].Mac_8x8_ins/gen_eg[14].Eg_mul_8_insi/multiplier[15].Hsigned_mult_Isigned_inst/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#7 Warning
+PREG Output pipelining  
+DSP ints_PG_sram/Processing_group_insl/parallel_lanes[3].Mac_8x8_ins/gen_eg[14].Eg_mul_8_insi/multiplier[14].Hsigned_mult_Isigned_inst/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg output ints_PG_sram/Processing_group_insl/parallel_lanes[3].Mac_8x8_ins/gen_eg[14].Eg_mul_8_insi/multiplier[14].Hsigned_mult_Isigned_inst/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#8 Warning
+PREG Output pipelining  
+DSP ints_PG_sram/Processing_group_insl/parallel_lanes[3].Mac_8x8_ins/gen_eg[14].Eg_mul_8_insi/multiplier[15].Hsigned_mult_Isigned_inst/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg output ints_PG_sram/Processing_group_insl/parallel_lanes[3].Mac_8x8_ins/gen_eg[14].Eg_mul_8_insi/multiplier[15].Hsigned_mult_Isigned_inst/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#9 Warning
+PREG Output pipelining  
+DSP ints_PG_sram/Processing_group_insl/parallel_lanes[3].Mac_8x8_ins/gen_eg[8].Eg_mul_8_insi/multiplier[14].Hsigned_mult_Isigned_inst/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg output ints_PG_sram/Processing_group_insl/parallel_lanes[3].Mac_8x8_ins/gen_eg[8].Eg_mul_8_insi/multiplier[14].Hsigned_mult_Isigned_inst/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#10 Warning
+PREG Output pipelining  
+DSP ints_PG_sram/Processing_group_insl/parallel_lanes[3].Mac_8x8_ins/gen_eg[8].Eg_mul_8_insi/multiplier[15].Hsigned_mult_Isigned_inst/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg output ints_PG_sram/Processing_group_insl/parallel_lanes[3].Mac_8x8_ins/gen_eg[8].Eg_mul_8_insi/multiplier[15].Hsigned_mult_Isigned_inst/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-4#1 Warning
+MREG Output pipelining  
+DSP ints_PG_sram/Control_sram_addr_insl/inp_raddr0 multiplier stage ints_PG_sram/Control_sram_addr_insl/inp_raddr0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#2 Warning
+MREG Output pipelining  
+DSP ints_PG_sram/Control_sram_addr_insl/inp_raddr0__0 multiplier stage ints_PG_sram/Control_sram_addr_insl/inp_raddr0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#3 Warning
+MREG Output pipelining  
+DSP ints_PG_sram/Control_sram_addr_insl/weight_raddr0 multiplier stage ints_PG_sram/Control_sram_addr_insl/weight_raddr0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#4 Warning
+MREG Output pipelining  
+DSP ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/cnt_hw_input_addr multiplier stage ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/cnt_hw_input_addr/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#5 Warning
+MREG Output pipelining  
+DSP ints_PG_sram/Processing_group_insl/p_0_out1 multiplier stage ints_PG_sram/Processing_group_insl/p_0_out1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PDCN-1569#1 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1/I0) is not included in the LUT equation: 'O6=(A6+~A6)*((A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#2 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell inst_axi_interconnect/inst/axi_interconnect_inst/si_converter_bank/gen_conv_slot[3].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__3 (pin inst_axi_interconnect/inst/axi_interconnect_inst/si_converter_bank/gen_conv_slot[3].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__3/I1) is not included in the LUT equation: 'O6=(A6+~A6)*((A3)+((~A3)*A4*A2*A5)+((~A3)*(~A4)*A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#3 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell inst_axi_interconnect/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin inst_axi_interconnect/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A6+~A6)*((A4)+((~A4)*A3*A5*A1)+((~A4)*(~A3)*A1))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#4 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell inst_axi_interconnect/inst/axi_interconnect_inst/si_converter_bank/gen_conv_slot[3].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__1 (pin inst_axi_interconnect/inst/axi_interconnect_inst/si_converter_bank/gen_conv_slot[3].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__1/I1) is not included in the LUT equation: 'O6=(A6+~A6)*((A3)+((~A3)*A4*A5*A1)+((~A3)*(~A4)*A1))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#5 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell inst_axi_interconnect/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__2 (pin inst_axi_interconnect/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__2/I1) is not included in the LUT equation: 'O6=(A6+~A6)*((A2)+((~A2)*A1*A4*A5)+((~A2)*(~A1)*A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#6 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell inst_axi_interconnect/inst/axi_interconnect_inst/si_converter_bank/gen_conv_slot[3].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0 (pin inst_axi_interconnect/inst/axi_interconnect_inst/si_converter_bank/gen_conv_slot[3].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0/I1) is not included in the LUT equation: 'O6=(A6+~A6)*((A5)+((~A5)*A1*A2*A4)+((~A5)*(~A1)*A4))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#7 Warning
+LUT equation term check  
+Used physical LUT pin 'A4' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I1) is not included in the LUT equation: 'O5=(A3*A2)+(A3*(~A2)*(~A1))+((~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#8 Warning
+LUT equation term check  
+Used physical LUT pin 'A4' of cell inst_axi_interconnect/inst/axi_interconnect_inst/si_converter_bank/gen_conv_slot[3].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin inst_axi_interconnect/inst/axi_interconnect_inst/si_converter_bank/gen_conv_slot[3].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A6+~A6)*((A3)+((~A3)*A1*A2*A5)+((~A3)*(~A1)*A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#9 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I0) is not included in the LUT equation: 'O5=(A3*A2)+(A3*(~A2)*(~A1))+((~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#10 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell inst_axi_interconnect/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__3 (pin inst_axi_interconnect/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__3/I1) is not included in the LUT equation: 'O6=(A6+~A6)*((A3)+((~A3)*A2*A4*A1)+((~A3)*(~A2)*A1))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#11 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell inst_axi_interconnect/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0 (pin inst_axi_interconnect/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0/I1) is not included in the LUT equation: 'O6=(A6+~A6)*((A4)+((~A4)*A3*A2*A1)+((~A4)*(~A3)*A1))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#12 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell inst_axi_interconnect/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__1 (pin inst_axi_interconnect/inst/axi_interconnect_inst/mi_converter_bank/gen_conv_slot[0].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__1/I1) is not included in the LUT equation: 'O6=(A6+~A6)*((A4)+((~A4)*A2*A3*A1)+((~A4)*(~A2)*A1))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#13 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell inst_axi_interconnect/inst/axi_interconnect_inst/si_converter_bank/gen_conv_slot[3].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__2 (pin inst_axi_interconnect/inst/axi_interconnect_inst/si_converter_bank/gen_conv_slot[3].clock_conv_inst/gen_async_readwrite.asyncfifo_rw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__2/I1) is not included in the LUT equation: 'O6=(A6+~A6)*((A3)+((~A3)*A2*A4*A1)+((~A3)*(~A2)*A1))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net ints_PG_sram/FSM_state_ins1/count_ins1/count_channel/ct1 is a gated clock net sourced by a combinational pin ints_PG_sram/FSM_state_ins1/count_ins1/count_channel/cnt[15]_i_2__0/O, cell ints_PG_sram/FSM_state_ins1/count_ins1/count_channel/cnt[15]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_channel/ct1_0 is a gated clock net sourced by a combinational pin ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_channel/cnt[15]_i_2/O, cell ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_channel/cnt[15]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/count_channel/CLK is a gated clock net sourced by a combinational pin ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/count_channel/weight_raddr0_i_1/O, cell ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/count_channel/weight_raddr0_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/count_channel/ct1 is a gated clock net sourced by a combinational pin ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/count_channel/cnt_hw_input_addr_i_1/O, cell ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/count_channel/cnt_hw_input_addr_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT ints_PG_sram/FSM_state_ins1/count_ins1/count_channel/cnt[15]_i_2__0 is driving clock pin of 17 cells. This could lead to large hold time violations. Involved cells are:
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_channel/cnt_reg[0],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_channel/cnt_reg[10],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_channel/cnt_reg[11],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_channel/cnt_reg[12],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_channel/cnt_reg[13],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_channel/cnt_reg[14],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_channel/cnt_reg[15],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_channel/cnt_reg[1],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_channel/cnt_reg[2],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_channel/cnt_reg[3],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_channel/cnt_reg[4],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_channel/cnt_reg[5],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_channel/cnt_reg[6],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_channel/cnt_reg[7],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_channel/cnt_reg[8]
+ (the first 15 of 17 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_channel/cnt[15]_i_2 is driving clock pin of 17 cells. This could lead to large hold time violations. Involved cells are:
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_kernelhw/cnt_reg[0],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_kernelhw/cnt_reg[10],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_kernelhw/cnt_reg[11],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_kernelhw/cnt_reg[12],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_kernelhw/cnt_reg[13],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_kernelhw/cnt_reg[14],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_kernelhw/cnt_reg[15],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_kernelhw/cnt_reg[1],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_kernelhw/cnt_reg[2],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_kernelhw/cnt_reg[3],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_kernelhw/cnt_reg[4],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_kernelhw/cnt_reg[5],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_kernelhw/cnt_reg[6],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_kernelhw/cnt_reg[7],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_kernelhw/count_kernelhw/cnt_reg[8]
+ (the first 15 of 17 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#3 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/count_channel/cnt_hw_input_addr_i_1 is driving clock pin of 23 cells. This could lead to large hold time violations. Involved cells are:
+ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/cnt_hw_input_addr/DSP_ALU_INST (in ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/cnt_hw_input_addr macro),
+ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/cnt_hw_input_addr/DSP_A_B_DATA_INST (in ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/cnt_hw_input_addr macro),
+ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/cnt_hw_input_addr/DSP_C_DATA_INST (in ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/cnt_hw_input_addr macro),
+ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/cnt_hw_input_addr/DSP_M_DATA_INST (in ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/cnt_hw_input_addr macro),
+ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/cnt_hw_input_addr/DSP_OUTPUT_INST (in ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/cnt_hw_input_addr macro),
+ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/cnt_hw_input_addr/DSP_PREADD_DATA_INST (in ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/cnt_hw_input_addr macro),
+ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/count_pixelhw/cnt_reg[0],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/count_pixelhw/cnt_reg[10],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/count_pixelhw/cnt_reg[11],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/count_pixelhw/cnt_reg[12],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/count_pixelhw/cnt_reg[13],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/count_pixelhw/cnt_reg[14],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/count_pixelhw/cnt_reg[15],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/count_pixelhw/cnt_reg[1],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/count_pixelhw/cnt_reg[2]
+ (the first 15 of 23 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#4 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT ints_PG_sram/FSM_state_ins1/count_ins1/count_pixelhw/count_channel/weight_raddr0_i_1 is driving clock pin of 22 cells. This could lead to large hold time violations. Involved cells are:
+ints_PG_sram/Control_sram_addr_insl/weight_raddr0/DSP_ALU_INST (in ints_PG_sram/Control_sram_addr_insl/weight_raddr0 macro),
+ints_PG_sram/Control_sram_addr_insl/weight_raddr0/DSP_A_B_DATA_INST (in ints_PG_sram/Control_sram_addr_insl/weight_raddr0 macro),
+ints_PG_sram/Control_sram_addr_insl/weight_raddr0/DSP_C_DATA_INST (in ints_PG_sram/Control_sram_addr_insl/weight_raddr0 macro),
+ints_PG_sram/Control_sram_addr_insl/weight_raddr0/DSP_M_DATA_INST (in ints_PG_sram/Control_sram_addr_insl/weight_raddr0 macro),
+ints_PG_sram/Control_sram_addr_insl/weight_raddr0/DSP_OUTPUT_INST (in ints_PG_sram/Control_sram_addr_insl/weight_raddr0 macro),
+ints_PG_sram/Control_sram_addr_insl/weight_raddr0/DSP_PREADD_DATA_INST (in ints_PG_sram/Control_sram_addr_insl/weight_raddr0 macro),
+ints_PG_sram/FSM_state_ins1/count_ins1/count_filt/cnt_reg[0],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_filt/cnt_reg[10],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_filt/cnt_reg[11],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_filt/cnt_reg[12],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_filt/cnt_reg[13],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_filt/cnt_reg[14],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_filt/cnt_reg[15],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_filt/cnt_reg[1],
+ints_PG_sram/FSM_state_ins1/count_ins1/count_filt/cnt_reg[2]
+ (the first 15 of 22 listed)
+Related violations: <none>
+
+REQP-1857#1 Warning
+RAMB18E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (bias_ddr_rd_wrapper/ddr_rd_core_bias_inst/inst_bias_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1857#2 Warning
+RAMB18E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (conv_ddr_wr_wrapper/ddr_wt_core_out_inst/inst_ddr_wt_data_fifo_conv/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1857#3 Warning
+RAMB18E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (inp_ddr_rd_wrapper/ddr_rd_core_inp_inst/inst_fifo_512din_512dout_512d/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1857#4 Warning
+RAMB18E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (inst_top_controller/inst_fifo_512din_512dout/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1857#5 Warning
+RAMB18E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (weight_ddr_rd_wrapper/ddr_rd_core_conv_weight_inst/inst_fifo_512din_512dout_512d/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#1 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (bias_ddr_rd_wrapper/ddr_rd_core_bias_inst/inst_bias_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#2 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (bias_ddr_rd_wrapper/ddr_rd_core_bias_inst/inst_bias_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#3 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (bias_ddr_rd_wrapper/ddr_rd_core_bias_inst/inst_bias_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#4 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (bias_ddr_rd_wrapper/ddr_rd_core_bias_inst/inst_bias_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#5 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (conv_ddr_wr_wrapper/ddr_wt_core_out_inst/inst_ddr_wt_data_fifo_conv/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#6 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (conv_ddr_wr_wrapper/ddr_wt_core_out_inst/inst_ddr_wt_data_fifo_conv/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#7 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (conv_ddr_wr_wrapper/ddr_wt_core_out_inst/inst_ddr_wt_data_fifo_conv/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#8 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (conv_ddr_wr_wrapper/ddr_wt_core_out_inst/inst_ddr_wt_data_fifo_conv/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#9 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (conv_ddr_wr_wrapper/ddr_wt_core_out_inst/inst_ddr_wt_data_fifo_conv/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#10 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (conv_ddr_wr_wrapper/ddr_wt_core_out_inst/inst_ddr_wt_data_fifo_conv/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#11 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (conv_ddr_wr_wrapper/ddr_wt_core_out_inst/inst_ddr_wt_data_fifo_conv/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#12 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (inp_ddr_rd_wrapper/ddr_rd_core_inp_inst/inst_fifo_512din_512dout_512d/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#13 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (inp_ddr_rd_wrapper/ddr_rd_core_inp_inst/inst_fifo_512din_512dout_512d/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#14 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (inp_ddr_rd_wrapper/ddr_rd_core_inp_inst/inst_fifo_512din_512dout_512d/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#15 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (inp_ddr_rd_wrapper/ddr_rd_core_inp_inst/inst_fifo_512din_512dout_512d/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#16 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (inp_ddr_rd_wrapper/ddr_rd_core_inp_inst/inst_fifo_512din_512dout_512d/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#17 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (inp_ddr_rd_wrapper/ddr_rd_core_inp_inst/inst_fifo_512din_512dout_512d/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#18 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (inp_ddr_rd_wrapper/ddr_rd_core_inp_inst/inst_fifo_512din_512dout_512d/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#19 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (inst_top_controller/inst_fifo_512din_512dout/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#20 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (inst_top_controller/inst_fifo_512din_512dout/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#21 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (inst_top_controller/inst_fifo_512din_512dout/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#22 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (inst_top_controller/inst_fifo_512din_512dout/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#23 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (weight_ddr_rd_wrapper/ddr_rd_core_conv_weight_inst/inst_fifo_512din_512dout_512d/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#24 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (weight_ddr_rd_wrapper/ddr_rd_core_conv_weight_inst/inst_fifo_512din_512dout_512d/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#25 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (weight_ddr_rd_wrapper/ddr_rd_core_conv_weight_inst/inst_fifo_512din_512dout_512d/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#26 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (weight_ddr_rd_wrapper/ddr_rd_core_conv_weight_inst/inst_fifo_512din_512dout_512d/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#27 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (weight_ddr_rd_wrapper/ddr_rd_core_conv_weight_inst/inst_fifo_512din_512dout_512d/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#28 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (weight_ddr_rd_wrapper/ddr_rd_core_conv_weight_inst/inst_fifo_512din_512dout_512d/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#29 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (weight_ddr_rd_wrapper/ddr_rd_core_conv_weight_inst/inst_fifo_512din_512dout_512d/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+244 net(s) have no routable loads. The problem bus(es) and/or net(s) are inp_ddr_rd_wrapper/O_ram_addr_reg[13]_0,
+inp_ddr_rd_wrapper/O_ram_addr_reg[13]_1,
+inp_ddr_rd_wrapper/O_ram_addr_reg[13]_2,
+inst_ddr4_controller/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/LMB_CE_riu,
+inst_ddr4_controller/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/LMB_UE_riu,
+inst_ddr4_controller/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[12],
+inst_ddr4_controller/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[13],
+inst_ddr4_controller/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[14],
+inst_ddr4_controller/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[15],
+inst_ddr4_controller/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_low/SYNC[0].sync_reg[1],
+inst_ddr4_controller/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_low/SYNC[1].sync_reg[1],
+inst_ddr4_controller/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_upp/SYNC[0].sync_reg[1],
+inst_ddr4_controller/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_low/SYNC[0].sync_reg[1],
+inst_ddr4_controller/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_upp/SYNC[0].sync_reg[1],
+inst_ddr4_controller/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_upp/SYNC[1].sync_reg[1]
+ (the first 15 of 202 listed nets/buses).
+Related violations: <none>
+
+

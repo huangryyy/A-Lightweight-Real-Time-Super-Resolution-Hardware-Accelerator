@@ -1,0 +1,179 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Tue Nov  3 10:17:30 2026
+| Host         : WIN-4UCM7KQUVA0 running 64-bit major release  (build 9200)
+| Command      : report_ip_status
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+IP Status Summary
+
+1. Project IP Status
+--------------------
+Your project uses 31 IP. Some of these IP may have undergone changes in this release of the software. Please review the recommended actions.
+
+More information on the Xilinx versioning policy is available at www.xilinx.com.
+
+Project IP Instances
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| Instance Name                    | Status     | Recommendation      | Change    | IP Name            | IP      | New Version    | New        | Original Part        |
+|                                  |            |                     | Log       |                    | Version |                | License    |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| Hsigned_mult_Isigned             | Up-to-date | No changes required |  *(1)     | Multiplier         | 12.0    | 12.0 (Rev. 19) | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           |                    | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 19)     |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| axi_interconnect_0               | Up-to-date | No changes required |  *(2)     | AXI Interconnect   | 1.7     | 1.7 (Rev. 22)  | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           | RTL                | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 22)     |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| blk_mem_gen_input                | Up-to-date | No changes required |  *(3)     | Block Memory       | 8.4     | 8.4 (Rev. 7)   | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           | Generator          | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 7)      |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| blk_mem_gen_output               | Up-to-date | No changes required |  *(4)     | Block Memory       | 8.4     | 8.4 (Rev. 7)   | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           | Generator          | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 7)      |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| blk_mem_gen_weight               | Up-to-date | No changes required |  *(5)     | Block Memory       | 8.4     | 8.4 (Rev. 7)   | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           | Generator          | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 7)      |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| clk_wiz_0                        | Up-to-date | No changes required |  *(6)     | Clocking Wizard    | 6.0     | 6.0 (Rev. 13)  | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           |                    | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 13)     |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| clk_wiz_1                        | Up-to-date | No changes required |  *(7)     | Clocking Wizard    | 6.0     | 6.0 (Rev. 13)  | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           |                    | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 13)     |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| ddr4_controller                  | Up-to-date | No changes required |  *(8)     | DDR4 SDRAM (MIG)   | 2.2     | 2.2 (Rev. 20)  | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           |                    | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 20)     |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| fifo_512din_512dout_512d         | Up-to-date | No changes required |  *(9)     | FIFO Generator     | 13.2    | 13.2 (Rev. 9)  | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           |                    | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 9)      |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| fifo_top_controller              | Up-to-date | No changes required |  *(10)    | FIFO Generator     | 13.2    | 13.2 (Rev. 9)  | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           |                    | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 9)      |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| mult_quantization_scale          | Up-to-date | No changes required |  *(11)    | Multiplier         | 12.0    | 12.0 (Rev. 19) | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           |                    | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 19)     |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| proc_sys_reset_0                 | Up-to-date | No changes required |  *(12)    | Processor System   | 5.0     | 5.0 (Rev. 14)  | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           | Reset              | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 14)     |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| proc_sys_reset_ddr               | Up-to-date | No changes required |  *(13)    | Processor System   | 5.0     | 5.0 (Rev. 14)  | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           | Reset              | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 14)     |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| xdma_0                           | Up-to-date | No changes required |  *(14)    | DMA/Bridge         | 4.1     | 4.1 (Rev. 26)  | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           | Subsystem for PCI  | (Rev.   |                |            |                      |
+|                                  |            |                     |           | Express            | 26)     |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| ddr4_controller_microblaze_mcs   | Up-to-date | No changes required |  *(15)    | MicroBlaze MCS     | 3.0     | 3.0 (Rev. 22)  | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           |                    | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 22)     |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| ddr4_controller_phy              | Up-to-date | No changes required |  *(16)    | DDR4 SDRAM PHY IP  | 2.2     | 2.2 (Rev. 1)   | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           |                    | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 1)      |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| xdma_0_pcie4_ip                  | Up-to-date | No changes required |  *(17)    | UltraScale+        | 1.3     | 1.3 (Rev. 23)  | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           | Integrated Block   | (Rev.   |                |            |                      |
+|                                  |            |                     |           | (PCIE4) for PCI    | 23)     |                |            |                      |
+|                                  |            |                     |           | Express            |         |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| xdma_v4_1_26_blk_mem_64_noreg_be | Up-to-date | No changes required |  *(18)    | Block Memory       | 8.4     | 8.4 (Rev. 7)   | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           | Generator          | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 7)      |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| xdma_v4_1_26_blk_mem_64_reg_be   | Up-to-date | No changes required |  *(19)    | Block Memory       | 8.4     | 8.4 (Rev. 7)   | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           | Generator          | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 7)      |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| xdma_0_pcie4_ip_gt               | Up-to-date | No changes required |  *(20)    | UltraScale FPGAs   | 1.7     | 1.7 (Rev. 17)  | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           | Transceivers       | (Rev.   |                |            |                      |
+|                                  |            |                     |           | Wizard             | 17)     |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| bd_a471_dlmb_0                   | Up-to-date | No changes required |  *(21)    | Local Memory Bus   | 3.0     | 3.0 (Rev. 13)  | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           | (LMB) 1.0          | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 13)     |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| bd_a471_dlmb_cntlr_0             | Up-to-date | No changes required |  *(22)    | LMB BRAM           | 4.0     | 4.0 (Rev. 23)  | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           | Controller         | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 23)     |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| bd_a471_ilmb_0                   | Up-to-date | No changes required |  *(23)    | Local Memory Bus   | 3.0     | 3.0 (Rev. 13)  | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           | (LMB) 1.0          | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 13)     |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| bd_a471_ilmb_cntlr_0             | Up-to-date | No changes required |  *(24)    | LMB BRAM           | 4.0     | 4.0 (Rev. 23)  | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           | Controller         | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 23)     |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| bd_a471_iomodule_0_0             | Up-to-date | No changes required |  *(25)    | IOModule           | 3.1     | 3.1 (Rev. 9)   | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           |                    | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 9)      |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| bd_a471_lmb_bram_I_0             | Up-to-date | No changes required |  *(26)    | Block Memory       | 8.4     | 8.4 (Rev. 7)   | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           | Generator          | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 7)      |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| bd_a471_microblaze_I_0           | Up-to-date | No changes required |  *(27)    | MicroBlaze         | 11.0    | 11.0 (Rev. 12) | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           |                    | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 12)     |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| bd_a471_rst_0_0                  | Up-to-date | No changes required |  *(28)    | Processor System   | 5.0     | 5.0 (Rev. 14)  | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           | Reset              | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 14)     |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| bd_a471_second_dlmb_cntlr_0      | Up-to-date | No changes required |  *(29)    | LMB BRAM           | 4.0     | 4.0 (Rev. 23)  | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           | Controller         | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 23)     |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| bd_a471_second_ilmb_cntlr_0      | Up-to-date | No changes required |  *(30)    | LMB BRAM           | 4.0     | 4.0 (Rev. 23)  | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           | Controller         | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 23)     |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+| bd_a471_second_lmb_bram_I_0      | Up-to-date | No changes required |  *(31)    | Block Memory       | 8.4     | 8.4 (Rev. 7)   | Included   | xczu19eg-ffvc1760-2- |
+|                                  |            |                     |           | Generator          | (Rev.   |                |            |                      |
+|                                  |            |                     |           |                    | 7)      |                |            |                      |
++----------------------------------+------------+---------------------+-----------+--------------------+---------+----------------+------------+----------------------+
+*(1) d:/Vivado/Vivado/2023.2/data/ip/xilinx/mult_gen_v12_0/doc/mult_gen_v12_0_changelog.txt
+*(2) d:/Vivado/Vivado/2023.2/data/ip/xilinx/axi_interconnect_v1_7/doc/axi_interconnect_v1_7_changelog.txt
+*(3) d:/Vivado/Vivado/2023.2/data/ip/xilinx/blk_mem_gen_v8_4/doc/blk_mem_gen_v8_4_changelog.txt
+*(4) d:/Vivado/Vivado/2023.2/data/ip/xilinx/blk_mem_gen_v8_4/doc/blk_mem_gen_v8_4_changelog.txt
+*(5) d:/Vivado/Vivado/2023.2/data/ip/xilinx/blk_mem_gen_v8_4/doc/blk_mem_gen_v8_4_changelog.txt
+*(6) d:/Vivado/Vivado/2023.2/data/ip/xilinx/clk_wiz_v6_0/doc/clk_wiz_v6_0_changelog.txt
+*(7) d:/Vivado/Vivado/2023.2/data/ip/xilinx/clk_wiz_v6_0/doc/clk_wiz_v6_0_changelog.txt
+*(8) d:/Vivado/Vivado/2023.2/data/ip/xilinx/ddr4_v2_2/doc/ddr4_v2_2_changelog.txt
+*(9) d:/Vivado/Vivado/2023.2/data/ip/xilinx/fifo_generator_v13_2/doc/fifo_generator_v13_2_changelog.txt
+*(10) d:/Vivado/Vivado/2023.2/data/ip/xilinx/fifo_generator_v13_2/doc/fifo_generator_v13_2_changelog.txt
+*(11) d:/Vivado/Vivado/2023.2/data/ip/xilinx/mult_gen_v12_0/doc/mult_gen_v12_0_changelog.txt
+*(12) d:/Vivado/Vivado/2023.2/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(13) d:/Vivado/Vivado/2023.2/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(14) d:/Vivado/Vivado/2023.2/data/ip/xilinx/xdma_v4_1/doc/xdma_v4_1_changelog.txt
+*(15) d:/Vivado/Vivado/2023.2/data/ip/xilinx/microblaze_mcs_v3_0/doc/microblaze_mcs_v3_0_changelog.txt
+*(16) d:/Vivado/Vivado/2023.2/data/ip/xilinx/ddr4_phy_v2_2/doc/phy_ip_v1_2_changelog.txt
+*(17) d:/Vivado/Vivado/2023.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/doc/pcie4_uscale_plus_v1_3_changelog.txt
+*(18) d:/Vivado/Vivado/2023.2/data/ip/xilinx/blk_mem_gen_v8_4/doc/blk_mem_gen_v8_4_changelog.txt
+*(19) d:/Vivado/Vivado/2023.2/data/ip/xilinx/blk_mem_gen_v8_4/doc/blk_mem_gen_v8_4_changelog.txt
+*(20) d:/Vivado/Vivado/2023.2/data/ip/xilinx/gtwizard_ultrascale_v1_7/doc/gtwizard_ultrascale_v1_7_changelog.txt
+*(21) d:/Vivado/Vivado/2023.2/data/ip/xilinx/lmb_v10_v3_0/doc/lmb_v10_v3_0_changelog.txt
+*(22) d:/Vivado/Vivado/2023.2/data/ip/xilinx/lmb_bram_if_cntlr_v4_0/doc/lmb_bram_if_cntlr_v4_0_changelog.txt
+*(23) d:/Vivado/Vivado/2023.2/data/ip/xilinx/lmb_v10_v3_0/doc/lmb_v10_v3_0_changelog.txt
+*(24) d:/Vivado/Vivado/2023.2/data/ip/xilinx/lmb_bram_if_cntlr_v4_0/doc/lmb_bram_if_cntlr_v4_0_changelog.txt
+*(25) d:/Vivado/Vivado/2023.2/data/ip/xilinx/iomodule_v3_1/doc/iomodule_v3_1_changelog.txt
+*(26) d:/Vivado/Vivado/2023.2/data/ip/xilinx/blk_mem_gen_v8_4/doc/blk_mem_gen_v8_4_changelog.txt
+*(27) d:/Vivado/Vivado/2023.2/data/ip/xilinx/microblaze_v11_0/doc/microblaze_v11_0_changelog.txt
+*(28) d:/Vivado/Vivado/2023.2/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(29) d:/Vivado/Vivado/2023.2/data/ip/xilinx/lmb_bram_if_cntlr_v4_0/doc/lmb_bram_if_cntlr_v4_0_changelog.txt
+*(30) d:/Vivado/Vivado/2023.2/data/ip/xilinx/lmb_bram_if_cntlr_v4_0/doc/lmb_bram_if_cntlr_v4_0_changelog.txt
+*(31) d:/Vivado/Vivado/2023.2/data/ip/xilinx/blk_mem_gen_v8_4/doc/blk_mem_gen_v8_4_changelog.txt
+
+
