@@ -1,0 +1,9 @@
+{
+  "bias_endian": "little",
+  "block_scope": "per_layer",
+  "tail_policy": "zero_pad",
+  "padding_consumes_addresses": true,
+  "txt_leftmost": "msb",
+  "missing_bias": "error",
+  "nonzero_zero_point_padding": "reject"
+}
